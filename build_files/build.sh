@@ -18,6 +18,7 @@ dnf5 -y group install --with-optional virtualization
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-
+rpm-ostree override remove firefox firefox-langpacks
 #### Example for enabling a System Unit File
 systemctl enable libvirtd
+
